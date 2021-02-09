@@ -2,6 +2,7 @@ package org.scholanova.mealdeliverapi.model;
 
 public class Restaurateur {
     int clientMax;
+    String ville;
     Boolean commandeReady;
     String plataModifier;
     String nouveauPlat;
@@ -12,6 +13,14 @@ public class Restaurateur {
 
     public void setClientMax(int clientMax) {
         this.clientMax = clientMax;
+    }
+
+    public String getVille() {
+        return ville;
+    }
+
+    public void setVille(String ville) {
+        this.ville = ville;
     }
 
     public Boolean getCommandeReady() {
