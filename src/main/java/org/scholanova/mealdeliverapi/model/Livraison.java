@@ -47,5 +47,4 @@ public class Livraison {
         this.menu = menu;
     }
 
-
 }

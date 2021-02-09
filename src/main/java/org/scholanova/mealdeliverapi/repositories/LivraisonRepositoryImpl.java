@@ -19,6 +19,13 @@ public class LivraisonRepositoryImpl implements LivraisonRepository{
         course.setMenu("Poulet Roti");
         course.setPriseEnCharge(false);
 
-        return Arrays.asList(course);
+        Livraison course2=new Livraison();
+        course2.setAdresse("50 avenue de schola");
+        course2.setClient("Mr. Fouzi");
+        course2.setCommandeReady(false);
+        course2.setMenu("Poulet Roti");
+        course2.setPriseEnCharge(false);
+
+        return Arrays.asList(course, course2);
     }
 }
