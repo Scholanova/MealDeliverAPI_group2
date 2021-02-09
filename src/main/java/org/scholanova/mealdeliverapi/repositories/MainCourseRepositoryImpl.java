@@ -1,8 +1,6 @@
 package org.scholanova.mealdeliverapi.repositories;
 
-import org.jboss.jandex.Main;
 import org.scholanova.mealdeliverapi.model.MainCourse;
-import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 import org.springframework.stereotype.Repository;
 
 import java.util.Arrays;
