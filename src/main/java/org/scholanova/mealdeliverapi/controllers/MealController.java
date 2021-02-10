@@ -12,7 +12,9 @@ import org.scholanova.mealdeliverapi.repositories.Restaurant.RestaurateurReposit
 import org.scholanova.mealdeliverapi.repositories.Client.ClientRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -49,9 +51,15 @@ public class MealController {
     @Autowired
     PanierRepository panierRepository;
 
-    @PostMapping("/panier")
+    @PostMapping("/customer/{customerId}/panier/{panierId}")
     @ResponseBody
-    public Panier ajouterProduitPanier(@RequestParam int idPanier){
+    public Panier ajouterProduitPanier(@RequestBody int idProduit, @PathVariable(value="customerId") String customerId, @PathVariable(value="panierId") String panierId){
+        //TODO: Récupérer le customer qui correspond au customerId
+        //TODO: Récupérer le panier qui correspond au panierId
+        //TODO: Vérifier que le panier correspond bien au client
+        //TODO: Vérifier que le produit correspond bien à l'ID produit
+        //TODO: Si bon ajouter produit au panier
+        
         return panierRepository.ajoutProduitauPanier(idPanier);
     }
 
