@@ -3,7 +3,7 @@ package org.scholanova.mealdeliverapi.model;
 import java.util.List;
 
 public class Client {
-    List<String> panier;
+    String plat;
     Boolean couvert;
     Boolean commandeValide;
 
@@ -22,12 +22,12 @@ public class Client {
     public void setCouvert(Boolean couvert) {
         this.couvert = couvert;
     }
-
-    public List<String> getPanier() {
-        return this.panier;
+    
+    public String getPlat() {
+        return this.plat;
     }
 
-    public void setPanier(List<String> panier) {
-        this.panier = panier;
+    public void setPlat(String plat) {
+        this.plat = plat;
     }
 }

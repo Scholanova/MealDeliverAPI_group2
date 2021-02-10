@@ -26,11 +26,13 @@ public class MainCourseRepositoryImpl implements MainCourseRepository{
         pouletRoti.setName("Poulet Roti");
         pouletRoti.setPrice(10.0f);
         pouletRoti.setTimeToCook(45);
+        pouletRoti.setIdPlat(1);
 
         MainCourse steakFrite=new MainCourse();
         steakFrite.setName("Steak Frite");
         steakFrite.setPrice(6.0f);
         steakFrite.setTimeToCook(15);
+        steakFrite.setIdPlat(2);
 
         return Arrays.asList(pouletRoti,steakFrite);
     }

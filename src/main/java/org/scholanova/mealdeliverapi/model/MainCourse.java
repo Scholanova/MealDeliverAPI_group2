@@ -5,6 +5,15 @@ public class MainCourse {
     String name;
     float price;
     int timeToCook;
+    int idPlat;
+
+    public int getIdPlat() {
+        return this.idPlat;
+    }
+
+    public void setIdPlat(int idPlat) {
+        this.idPlat = idPlat;
+    }
 
     public MainCourse() {
     }
