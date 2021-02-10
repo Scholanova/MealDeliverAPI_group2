@@ -4,10 +4,7 @@ import java.util.List;
 
 public class Client {
     List<String> panier;
-    String nom;
-    String adresse;
     Boolean couvert;
-    int temps_cuisson;
     Boolean commandeValide;
 
     public Boolean getCommandeValide() {
@@ -26,31 +23,11 @@ public class Client {
         this.couvert = couvert;
     }
 
-    public int getTemps_cuisson() {
-        return this.temps_cuisson;
-    }
-
     public List<String> getPanier() {
         return this.panier;
     }
 
     public void setPanier(List<String> panier) {
         this.panier = panier;
-    }
-
-    public String getNom() {
-        return this.nom;
-    }
-
-    public void setNom(String nom) {
-        this.nom = nom;
-    }
-
-    public String getAdresse() {
-        return this.adresse;
-    }
-
-    public void setAdresse(String adresse) {
-        this.adresse = adresse;
     }
 }

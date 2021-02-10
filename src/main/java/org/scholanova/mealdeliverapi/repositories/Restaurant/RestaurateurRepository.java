@@ -1,4 +1,4 @@
-package org.scholanova.mealdeliverapi.repositories;
+package org.scholanova.mealdeliverapi.repositories.Restaurant;
 
 import org.scholanova.mealdeliverapi.model.Restaurateur;
 

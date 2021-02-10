@@ -4,12 +4,15 @@ import org.scholanova.mealdeliverapi.model.Client;
 import org.scholanova.mealdeliverapi.model.Livraison;
 import org.scholanova.mealdeliverapi.model.MainCourse;
 import org.scholanova.mealdeliverapi.model.Restaurateur;
-import org.scholanova.mealdeliverapi.repositories.MainCourseRepository;
-import org.scholanova.mealdeliverapi.repositories.LivraisonRepository;
-import org.scholanova.mealdeliverapi.repositories.RestaurateurRepository;
-import org.scholanova.mealdeliverapi.repositories.ClientRepository;
+import org.scholanova.mealdeliverapi.repositories.MainCourse.MainCourseRepository;
+import org.scholanova.mealdeliverapi.repositories.Livraison.LivraisonRepository;
+import org.scholanova.mealdeliverapi.repositories.Restaurant.RestaurateurRepository;
+import org.scholanova.mealdeliverapi.repositories.Client.ClientRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
@@ -43,6 +46,12 @@ public class MealController {
 
     @Autowired
     ClientRepository clientRepository;
+
+    @PostMapping("/panier")
+    @ResponseBody
+    public void ajouterProduitPanier(@RequestParam String produit, int id){
+        clientRepository.panier(produit, id);
+    }
 
     @GetMapping("/clients_menu")
     public List<Client> listAllClientsMenu(){

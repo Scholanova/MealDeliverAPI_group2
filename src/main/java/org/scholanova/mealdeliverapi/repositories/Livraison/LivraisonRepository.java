@@ -1,4 +1,4 @@
-package org.scholanova.mealdeliverapi.repositories;
+package org.scholanova.mealdeliverapi.repositories.Livraison;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package org.scholanova.mealdeliverapi.repositories;
+package org.scholanova.mealdeliverapi.repositories.MainCourse;
 
 import org.scholanova.mealdeliverapi.model.MainCourse;
 
