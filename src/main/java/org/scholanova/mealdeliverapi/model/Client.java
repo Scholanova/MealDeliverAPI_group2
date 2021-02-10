@@ -30,10 +30,6 @@ public class Client {
         return this.temps_cuisson;
     }
 
-    public void setTemps_cuisson(int temps_cuisson) {
-        this.temps_cuisson = temps_cuisson;
-    }
-
     public List<String> getPanier() {
         return this.panier;
     }

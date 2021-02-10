@@ -11,22 +11,12 @@ public class RestaurateurRepositoryImpl implements RestaurateurRepository {
 
     @Override
     public List<Restaurateur> listAll() {
-        Restaurateur MealParis= new Restaurateur();
-        MealParis.setClientMax(20);
-        MealParis.setVille("Paris");
-        MealParis.setCommandeReady(true);
-        MealParis.setPlataModifier("Poulet");
-        MealParis.setNouveauPlat("Burger");
+        Restaurateur Resto1 = new Restaurateur();
+        Resto1.setClientMax(10);
+        Resto1.setCommandeReady(true);
+        Resto1.setPlataModifier("Poulet");
+        Resto1.setNouveauPlat("Burger");
 
-        Restaurateur MealArgenteuil= new Restaurateur();
-        MealArgenteuil.setClientMax(10);
-        MealArgenteuil.setVille("Argenteuil");
-        MealArgenteuil.setCommandeReady(false);
-        MealArgenteuil.setPlataModifier("Baguette");
-        MealArgenteuil.setNouveauPlat("Burger");
-
-
-        return Arrays.asList(MealParis,MealArgenteuil);
-    }
-
+        return Arrays.asList(Resto1);
+     }
 }

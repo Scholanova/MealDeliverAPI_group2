@@ -1,4 +1,4 @@
-package org.scholanova.mealdeliverapi;
+/*package org.scholanova.mealdeliverapi;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -11,3 +11,4 @@ class MealdeliverapiApplicationTests {
 	}
 
 }
+*/
