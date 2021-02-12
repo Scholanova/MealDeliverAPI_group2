@@ -1,17 +1,33 @@
 package org.scholanova.mealdeliverapi.model;
 
-import java.util.List;
-
 public class Panier {
-    int idPlat;
-    List<String> panier;
+    int idProduit;
+    String customerId;
+    String panierId;
 
-    public int getIdPlat() {
-        return this.idPlat;
+    public String getCustomerId() {
+        return this.customerId;
     }
 
-    public void setIdPlat(int idPlat) {
-        this.idPlat = idPlat;
+    public void setCustomerId(String customerId) {
+        this.customerId = customerId;
     }
 
+    public String getPanierId() {
+        return this.panierId;
+    }
+
+    public void setPanierId(String panierId) {
+        this.panierId = panierId;
+    }
+
+    public int getIdProduit() {
+        return this.idProduit;
+    }
+
+    public void setIdProduit(int idProduit) {
+        this.idProduit = idProduit;
+    }
+
+    
 }

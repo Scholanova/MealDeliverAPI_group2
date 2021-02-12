@@ -8,21 +8,16 @@ import org.scholanova.mealdeliverapi.repositories.MainCourse.MainCourseRepositor
 import org.scholanova.mealdeliverapi.repositories.MainCourse.MainCourseRepositoryImpl;
 import org.springframework.stereotype.Repository;
 
-@Repository
+/*@Repository
 public class PanierRepositoryImpl implements PanierRepository{
 
     @Override
-    public Panier ajoutProduitauPanier(int idPlat) {
+    public Panier ajoutProduitauPanier(int idProduit, String customerId, String panierId) {
         Panier panier = new Panier();
-        MainCourseRepositoryImpl plat = new MainCourseRepositoryImpl();
-        List<MainCourse> listePlat = plat.listAll();
-        MainCourse menu = new MainCourse();
-        panier.setIdPlat(1);
-
-        if(panier.getIdPlat() == idPlat){
-            panier.getIdPlat();
-        }
-
+        panier.setCustomerId("007");
+        panier.setIdProduit(10);
+        panier.setPanierId("15");
+        
         return panier;
     }
-}
+}*/

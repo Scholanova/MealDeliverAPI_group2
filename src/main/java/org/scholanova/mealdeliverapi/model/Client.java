@@ -3,6 +3,7 @@ package org.scholanova.mealdeliverapi.model;
 import java.util.List;
 
 public class Client {
+    List<Panier> panier;
     String plat;
     Boolean couvert;
     Boolean commandeValide;

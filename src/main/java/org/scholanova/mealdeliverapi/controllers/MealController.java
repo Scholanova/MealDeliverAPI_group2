@@ -48,7 +48,7 @@ public class MealController {
         return restaurateurRepository.listAll();
     }
 
-    @Autowired
+    /*@Autowired
     PanierRepository panierRepository;
 
     @PostMapping("/customer/{customerId}/panier/{panierId}")
@@ -60,8 +60,9 @@ public class MealController {
         //TODO: Vérifier que le produit correspond bien à l'ID produit
         //TODO: Si bon ajouter produit au panier
         
-        return panierRepository.ajoutProduitauPanier(idPanier);
-    }
+        
+        return panierRepository.ajoutProduitauPanier(idProduit, customerId, panierId);
+    }*/
 
     @Autowired
     ClientRepository clientRepository;
