@@ -18,6 +18,8 @@ public class LivraisonRepositoryImpl implements LivraisonRepository{
         course.setCommandeReady(false);
         course.setMenu("Poulet Roti");
         course.setPriseEnCharge(false);
+        course.setIdClient(1);
+        course.setIdPanier(1);
 
         Livraison course2=new Livraison();
         course2.setAdresse("50 avenue de schola");
@@ -25,6 +27,8 @@ public class LivraisonRepositoryImpl implements LivraisonRepository{
         course2.setCommandeReady(false);
         course2.setMenu("Poulet Roti");
         course2.setPriseEnCharge(false);
+        course2.setIdClient(2);
+        course2.setIdPanier(2);
 
         return Arrays.asList(course, course2);
     }

@@ -4,9 +4,35 @@ import java.util.List;
 
 public class Client {
     List<Panier> panier;
-    String plat;
     Boolean couvert;
     Boolean commandeValide;
+    int plat;
+    int idPanier;
+    int idClient;
+
+    public int getIdPanier() {
+        return this.idPanier;
+    }
+
+    public void setIdPanier(int idPanier) {
+        this.idPanier = idPanier;
+    }
+
+    public int getIdClient() {
+        return this.idClient;
+    }
+
+    public void setIdClient(int idClient) {
+        this.idClient = idClient;
+    }
+
+    public int getPlat() {
+        return this.plat;
+    }
+
+    public void setPlat(int plat) {
+        this.plat = plat;
+    }
 
     public Boolean getCommandeValide() {
         return this.commandeValide;
@@ -24,11 +50,5 @@ public class Client {
         this.couvert = couvert;
     }
     
-    public String getPlat() {
-        return this.plat;
-    }
-
-    public void setPlat(String plat) {
-        this.plat = plat;
-    }
+    
 }

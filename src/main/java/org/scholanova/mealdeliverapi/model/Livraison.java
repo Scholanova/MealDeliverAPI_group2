@@ -6,6 +6,24 @@ public class Livraison {
     Boolean priseEnCharge;
     Boolean commandeReady;
     String menu;
+    int idPanier;
+    int idClient;
+
+    public int getIdPanier() {
+        return this.idPanier;
+    }
+
+    public void setIdPanier(int idPanier) {
+        this.idPanier = idPanier;
+    }
+
+    public int getIdClient() {
+        return this.idClient;
+    }
+
+    public void setIdClient(int idClient) {
+        this.idClient = idClient;
+    }
 
     public String getAdresse() {
         return this.adresse;
