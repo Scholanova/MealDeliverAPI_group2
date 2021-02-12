@@ -7,5 +7,5 @@ import org.scholanova.mealdeliverapi.model.Panier;
 
 public interface ClientRepository {
     public List<Client> listAll();
-    //public List<Panier> panier();
+    public List<Panier> panier();
 }
